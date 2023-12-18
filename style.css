@@ -58,13 +58,13 @@ label {
     color: #fff;
 }
 
-@media (max-width: 414px){
+@media (max-width: 430px){
     .container {
         flex-direction: column;
         container: 100%;
     }
     form > label {
-        font-size: 25pt;
+        font-size: 20pt;
     }
 
     form > input {
