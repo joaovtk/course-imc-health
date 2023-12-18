@@ -1,5 +1,6 @@
 (() => {
-    document.querySelector("form").addEventListener("submit", (e) => {
+    let form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
         e.preventDefault();
         let weight = document.getElementById("peso").value;
         let height = document.getElementById("altura").value;
@@ -24,5 +25,7 @@
                 words.textContent = "Obesidade morbida";
             }
         }
+
+        form.reset();
     });
 })();
