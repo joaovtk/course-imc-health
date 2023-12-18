@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --colorv1: #68B159; 
+    --colorv2: #216A12;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+form {
+    width: 350px;
+}
+
+form > input {
+    width: 250px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+form > .submitButton {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #0f0;
+    font-size: 15pt;
+    color: #fff;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+}
+
+label {
+    width: 100px;
+}
+
+
+.box {
+    width: 350px;
+    background-color: #cecece;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+}
+
+@media (max-width: 414px){
+    .container {
+        flex-direction: column;
+        container: 100%;
+    }
+    form > label {
+        font-size: 25pt;
+    }
+
+    form > input {
+        width: 100%;
+        font-size: 18pt;
+    }
+
+    form > .submitButton {
+        width: 100%;
+    }
+}
