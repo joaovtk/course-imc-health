@@ -20,23 +20,28 @@ header, footer {
     width: 100vw;
     color: #fff;
 }
-footer {
+header {
     height: 100px;
-    font-size: 15pt;
+}
+footer {
+    display: block;
+    height: 100px;
+    font-size: 12pt;
     padding: 15px;
     display: block;
-    margin-top: 500px;
+    position: relative;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    height: 100%;
 }
 
 form {
     width: 50vw;
-    height: 500px;
+    height: 98vh;
     background-color: #6d8d76;
     padding: 10px;
     border-radius: 15px;
@@ -54,55 +59,55 @@ form > input {
     border-radius: 15px;
     padding: 10px;
     margin: auto;
-    width: 250px;
+    width: 100%;
     height: 50px;
     border: 1px solid #000;
-    font-size: 15pt;
+    font-size: 25pt;
 } 
 
 .submitButton {
-    width: 250px;
-    height: 100px;
+    width: 100%;
+    height: 75px;
     margin-top: 10px;
-    font-size: 20pt;
+    font-size: 25pt;
     margin-top: 50px;
-    background-image: linear-gradient(90deg, #676767, #262626);
-    color: #fff;
-    transition: 0.5s ease-in;
-    border: 5px solid #fff;
+    border-radius: 15px;
+    font-size: 25pt;
 }
-.submitButton:hover {
-    border: 5px solid #717171;
-}
-
 footer {
     margin-top: 15px;
 }
 
 .box {
     width: 50vw;
-    height: 500px;
+    height: 98vh;
     background-color: #6d8d76;
     display: block;
     padding: 15px;
     margin-left: 25px;
     text-align: center;
-    font-size: 35pt;
+    font-size: 25pt;
     border-radius: 15px;
     color: #fff;
 }
 
 .box > p {
-    margin-top: 250px;
+    margin-top: 100px;
 }
+
 
 @media (max-width: 430px) {
     form {
         border-radius: 0;
         width: auto;
     }
+    form > input {
+        width: 100%;
+    }
     .submitButton {
-        width: 250px;
+        margin-top: 90px;
+        width: 100%;
+        font-size: 20pt;
     }
     .container {
         display: flex;
@@ -112,8 +117,33 @@ footer {
     .box {
         border-radius: 0;
         width: auto;
-        font-size: 15pt;
+        font-size: 20pt;
         margin: 0;
         margin-top: 10px;
     }
+    .box > h1 {
+        margin-top: 100px;
+    }
+}
+
+.obsesidade1 {
+    background-color: rgb(250, 92, 92);
+}
+.obsesidade2 {
+    background-color: rgb(242, 40, 40);
+}
+.obsesidade3 {
+    background-color: rgb(255, 0, 0);
+}
+
+.warning {
+    background-color: rgb(222, 134, 134);
+}
+
+.ideal {
+    background-color: rgba(33, 33, 255, 0.758);
+}
+
+.less {
+    background-color: rgba(115, 115, 235, 0.758);
 }
